@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC YOURSELF</title>
+    <link rel="icon" href="https://cdn.tgdd.vn/2020/06/content/thumb-800x450-5.jpg"/>
+    <script src="https://kit.fontawesome.com/a7b0f58175.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="content-controll">
+            <p class="controll-playing-text">Now playing</p>
+            <h3 class="controll-playing-title">...</h3>
+            <div class="controll-thumbnail-content">
+                <div class="controll-thumbail" style="background-image: url(https://cdn.tgdd.vn/2020/06/content/thumb-800x450-5.jpg);"></div>
+            </div>
+            <div class="controlls">
+                <div class="controlls-redo">
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <div class="controlls-prev">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="controlls-play-pause">
+                    <div class="controlls-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="controlls-pause">
+                        <i class="fas fa-pause"></i>
+                    </div>
+                </div>
+                <div class="controlls-next">
+                    <i class="fas fa-forward"></i>
+                </div>
+                <div class="controlls-random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+            <div class="controlls-progess">
+                <span id="current-time"></span>
+                <input type="range" id="controll-range" name="controll-range" min='0' max="100" step="1" value="0"/>
+                <span id="duration-time"></span>
+                <audio autoplay="true" id="audio" src=""></audio>
+            </div>
+            <p class="rank-content">
+                Bảng xếp hạng <span class="zingmp">ZingMP3</span> 
+                tháng <span class="rank-month"></span> 
+                năm <span class="rank-year"></span>
+            </p>
+        </div>
+        <div class="content-list-music"></div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
