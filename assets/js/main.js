@@ -145,6 +145,7 @@ const app = {
                 audio.play();
             }else{
                 _this.randomSong();
+                audio.play();
             }
         }
         //Xử lý prevSong
