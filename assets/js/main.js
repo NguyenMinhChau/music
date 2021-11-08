@@ -156,6 +156,7 @@ const app = {
             }
             else{
                 _this.randomSong();
+                audio.play();
             }
         }
         //Xử lý random
@@ -176,6 +177,7 @@ const app = {
                 audio.play();
             }else{
                 controllsNext.click();
+                audio.play();
             }
         }
         //Xử lý click vào item Song
